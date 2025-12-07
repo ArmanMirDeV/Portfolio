@@ -15,7 +15,7 @@ export default function FloatingIcons() {
   }, []);
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:your-email@example.com";
+    window.location.href = "mailto:mirarman8583@gmail.com";
   };
 
   const scrollToTop = () => {
