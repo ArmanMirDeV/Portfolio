@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Lee - Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    @keyframes typing-cursor {
+      from {
+        border-right-color: transparent;
+      }
+      to {
+        border-right-color: white;
+      }
+    }
+    .typing-cursor {
+      animation: typing-cursor 0.7s ease-in-out infinite;
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00A9FF", // Blue gradient color from screenshot
+            "background-light": "#FFFFFF",
+            "background-dark": "#000000",
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem", // 8px
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-neutral-800 dark:text-neutral-200 antialiased">
+
+
+    <section class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex h-screen">
+<aside class="w-64 bg-[#0a192f] text-slate-300 p-6 flex flex-col justify-between">
+<div>
+<div class="flex flex-col items-center mb-12">
+<img alt="Portrait of a professional man in a suit" class="w-32 h-32 rounded-full border-4 border-slate-700 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC83lYwx58k2O8iEfIT0ysvUSXipWoLyPX7WGKUt84ozcmTU8dBQlH5WuLFEM1EOa8xMaJLDaRi9Qo8aGaEexmhtIta_OKY7Y-4bF92qIp-CXxS7n22K9Z5X23hafHWCTFwnc9aVrggmw2O2DXW7e028yb8ibCEyQp2KvBjm1W23lnfM3B5xE5O8jvNtF6hACA-HdDB8Q5idW-9Rhk-nSpT0HK_lAsdfOWA4xt81W5Yul6zTA6HnDJ4IAujr-fKqRa_n-cpJYuJ8wQM"/>
+</div>
+<nav>
+<ul class="space-y-2">
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">home</span>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">auto_awesome_mosaic</span>
+<span>Features</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">widgets</span>
+<span>Portfolio</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">description</span>
+<span>Resume</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">groups</span>
+<span>Clients</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">shopping_cart</span>
+<span>Pricing</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg bg-slate-800 text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">article</span>
+<span>Blog</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-4 py-2 px-4 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors duration-200" href="#">
+<span class="material-icons-outlined text-primary">chat_bubble_outline</span>
+<span>Contact</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div>
+<div class="border-t border-slate-700 my-6"></div>
+<h3 class="text-sm font-semibold text-slate-400 mb-4">Find With Me</h3>
+<div class="flex items-center space-x-3">
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:bg-primary hover:text-white transition-colors duration-200" href="#">
+<i class="icon-instagram"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:bg-primary hover:text-white transition-colors duration-200" href="#">
+<i class="icon-linkedin"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:bg-primary hover:text-white transition-colors duration-200" href="#">
+<i class="icon-twitter"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:bg-primary hover:text-white transition-colors duration-200" href="#">
+<i class="icon-facebook"></i>
+</a>
+</div>
+</div>
+</aside>
+</div>
+
+</section>
+
+
+
+
+
+
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="A close-up portrait of a man looking upwards, with dramatic lighting highlighting his features against a dark background." class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiRZfZBVOHbf5IYqws4K9nwOhqkm7fuVOUuAY8jhmjieawV4ctITAovxqLVBly1wQXcBQv1f4OW_bgqJEyIq8bcHyjnmOj5p8l6reOGb66KxjdRYk7K4WWCaBRVFTM8qe4P9WDVYx5HCwxtiNrVuJB9e7bYjJw-248Kc51d3oolkeD9sHLRUSv9CBo9DDEtPzODcg-HAy0fG28sRk2pAFKCggcqMzhW96UPfZXtcEtssTezdHOP-HpH073_98koM67kEPc-WymdlF7"/>
+<div class="absolute inset-0 bg-black/60 dark:bg-black/70"></div>
+</div>
+<button class="fixed bottom-4 left-4 z-20 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hover:bg-blue-600 transition-colors">
+<i class="fab fa-facebook-messenger text-2xl"></i>
+</button>
+<div class="fixed top-1/2 right-0 transform -translate-y-1/2 z-20 flex items-center">
+<div class="bg-[#85c341] text-white px-2 py-4 rounded-l-md shadow-lg cursor-pointer hover:bg-green-600 transition-colors">
+<p class="writing-mode-vertical-rl rotate-180 uppercase text-xs font-semibold tracking-wider">34+ Pre-built Sites</p>
+</div>
+<div class="w-2 h-2 bg-[#85c341] rounded-full -ml-1"></div>
+</div>
+<main class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center">
+<div class="lg:w-1/2 text-center lg:text-left">
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+            I'm John Lee
+          </h1>
+<h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mt-2 inline-flex items-center">
+<span class="text-white mr-4">A</span>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Web Developer</span>
+<span class="ml-1 w-1 h-12 md:h-16 lg:h-20 bg-white inline-block typing-cursor border-r-2 border-white"></span>
+</h2>
+<div class="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
+<a class="inline-flex items-center justify-center px-8 py-3.5 text-sm font-medium text-white bg-transparent border border-neutral-600 rounded-full hover:bg-white/10 transition-all duration-300" href="#">
+              Contact Me
+              <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+<div class="mt-12 flex justify-center lg:justify-start items-center space-x-3">
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-instagram"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-linkedin-in"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-twitter"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a class="w-10 h-10 rounded-full bg-neutral-800/50 flex items-center justify-center text-neutral-400 hover:bg-primary hover:text-white transition-all duration-300" href="#">
+<i class="fab fa-tiktok"></i>
+</a>
+</div>
+</div>
+<div class="lg:w-1/2">
+</div>
+</div>
+</main>
+</div>
+
+
+
+<section class="font-display bg-background-light dark:bg-background-dark antialiased">
+<div class="flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+<div class="w-full max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-8 rounded-DEFAULT bg-white/50 dark:bg-slate-900/40 text-gray-700 dark:text-gray-400">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">01. Success Architects</h3>
+<p class="leading-relaxed">
+                        Business consulting consultants provide expert advice and guidance to businesses to help them improve their performance efficiency.
+                    </p>
+</div>
+<div class="p-8 rounded-DEFAULT bg-white/50 dark:bg-slate-900/40 text-gray-700 dark:text-gray-400">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">02. Success Architects</h3>
+<p class="leading-relaxed">
+                        App consulting consultants provide expert advice and guide the businesses to help them improve their performance efficiency.
+                    </p>
+</div>
+<div class="p-8 rounded-DEFAULT bg-white/50 dark:bg-slate-900/40 text-gray-700 dark:text-gray-400">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">03. Success Architects</h3>
+<p class="leading-relaxed">
+                        I specialize in creating solutions that are not only visually engaging but also align with business goals. From [list services, e.g., branding].
+                    </p>
+</div>
+<div class="p-8 rounded-DEFAULT bg-white/50 dark:bg-slate-900/40 text-gray-700 dark:text-gray-400">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">04. UI/Visual Design</h3>
+<p class="leading-relaxed">
+                        I'm proud of what I've accomplished and excited to share my journey with you. I'm proud of what I've accomplished.
+                    </p>
+</div>
+<div class="relative p-8 rounded-DEFAULT bg-white dark:bg-primary/20 text-gray-700 dark:text-gray-400">
+<div class="absolute inset-0 border border-primary rounded-DEFAULT pointer-events-none"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent dark:from-primary/20 dark:to-transparent rounded-DEFAULT pointer-events-none"></div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">05. Branding Design</h3>
+<p class="leading-relaxed">
+                        Interested in working together? Let's bring your ideas to life! Contact me, and let's start building something amazing.
+                    </p>
+</div>
+<div class="p-8 rounded-DEFAULT bg-white/50 dark:bg-slate-900/40 text-gray-700 dark:text-gray-400">
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">06. Motion Design</h3>
+<p class="leading-relaxed">
+                        Feel free to browse through my recent projects. Each one showcases my approach and dedication to detail, creativity, and.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+<section class="font-display bg-background-light dark:bg-background-dark">
+<div class="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
+<div class="max-w-7xl w-full mx-auto">
+<header class="text-center mb-12 md:mb-16">
+<h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter text-text-light dark:text-text-dark uppercase">
+                    I Specialize In A <br class="sm:hidden"/> Range Of <span class="inline-block ml-2">💪</span>Skills
+                </h1>
+</header>
+<main>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+<span class="material-symbols-outlined text-4xl text-text-light dark:text-text-dark mb-4">code</span>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-2">Front-end Development</h2>
+<p class="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                            I am in expert HTML5, CSS3, JavaScript (ES6+), React, Vue.js
+                        </p>
+</div>
+<div class="bg-primary rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-lg ring-4 ring-primary/30">
+<span class="material-symbols-outlined text-4xl text-gray-900 mb-4">terminal</span>
+<h2 class="text-xl font-bold text-gray-900 mb-2">Back-end Development</h2>
+<p class="text-gray-800 leading-relaxed">
+                            I am in expert &amp; doing Node.js, Express, Python, Django
+                        </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+<span class="material-symbols-outlined text-4xl text-text-light dark:text-text-dark mb-4">database</span>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-2">Database Management</h2>
+<p class="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                            I am in expert &amp; doing MySQL, MongoDB, PostgreSQL
+                        </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+<span class="material-symbols-outlined text-4xl text-text-light dark:text-text-dark mb-4">tune</span>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-2">Version Control</h2>
+<p class="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                            I am in expert &amp; doing Git, GitHub, Bitbucket. Providing the best.
+                        </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+<span class="material-symbols-outlined text-4xl text-text-light dark:text-text-dark mb-4">grid_view</span>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-2">Responsive Design</h2>
+<p class="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                            Creating visually appealing and functional websites across devices
+                        </p>
+</div>
+<div class="bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-DEFAULT p-8 text-center flex flex-col items-center shadow-sm hover:shadow-lg transition-shadow duration-300">
+<span class="material-symbols-outlined text-4xl text-text-light dark:text-text-dark mb-4">design_services</span>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-2">UI/UX Design</h2>
+<p class="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+                           Wireframing, prototyping, user flow analysis
+                        </p>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</section>
+
+
+<section class="bg-background-light dark:bg-background-dark font-sans">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+<header class="text-center mb-12 md:mb-16">
+<h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-gray-900 dark:text-white">
+        Here's a glimpse of <br/> some exciting <span class="inline-block">🧑‍💻</span>projects <br/> I've done
+      </h1>
+</header>
+<main class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 flex flex-col space-y-6">
+<div class="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
+<img alt="Screenshot of an E-Commerce website with a bright teal hero section featuring a running shoe." class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfsed3s5f7VgAnKy5SDk0QWGKZZWOGvJRm_KfSETkEpd0l0lva1OGqAcOlbG4XxRqjUI_BFX7jZGahP1EbFY57u9h4qEDOMiPhCQab4fU-hJUgPnRCPAQIYP07HzwRndxRqdIVw1sI6DfTFAZB3otGtiVGo8zev92NoyVk1I8AmceyTzIsHM4ACE60rEobnLEcPvDuLClHFQZ6twACUveWPimrE4J2Ft0EqEQg13BxxVf85KZOqT9Xcx4eXn7M3AGahFvCw0HMx2B"/>
+</div>
+<div class="flex-grow flex flex-col space-y-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">E-Commerce Website</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed flex-grow">
+            Developed a fully functional e-commerce platform using React and Node.js, complete with user authentication.
+          </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">React</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">Nodejs</span>
+</div>
+</div>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-base font-medium text-gray-900 dark:text-white">View Project</span>
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-black">arrow_forward</span>
+</div>
+</a>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 flex flex-col space-y-6">
+<div class="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
+<img alt="Screenshot of a Portfolio website with a dark green theme featuring a smiling woman with a camera." class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjtKNSjNw5NZABe9kV9x9HqxrQ9N9_exosiPSQ3sBbq65aWmdmMasZolTHSOoNtbTlbDaft8RM5adlUus7YpmWM_mhckEfeM5neDECwhve9sp7W6W2TmYmkCCel96GG4aXdTI1j3Z96SehbIwu0pYoy15PJebdnO6pk_U9g-tyGZyo4GTqIdhbp6HBfo2q0sh9EZE3gK60qN6Css4WMQZqnR9c4ULA9NkC2NrHbTRF0z9c69vf8Hv0mfOK0Is9VO9YUBUzdhMqa_IE"/>
+</div>
+<div class="flex-grow flex flex-col space-y-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Portfolio Website</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed flex-grow">
+            Designed and built a sleek personal portfolio showcasing a photographer's skills, projects, and achievements.
+          </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">UI/UX Design</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">React</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">Nodejs</span>
+</div>
+</div>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-base font-medium text-gray-900 dark:text-white">View Project</span>
+<div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">add</span>
+</div>
+</a>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 flex flex-col space-y-6">
+<div class="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
+<img alt="Screenshot of a Jewelry website with an elegant, minimalist design and close-up shots of gold jewelry." class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdZIx6UiY4FHLx85OKrNfHq8hCbFZ5YMcYTKH6SOP_kA62hLlBSCbarE1aZfAto70e3CHoDUBPqhFlByGgx0Ohw2GeWWhmmTam0jt8ObP60ioKvby1n8IXtvLLG2BA-iV-MlbkBdzsK-YyYbK-nO_PnNADpIC0hVF25gwjU0ec8aofhp9OVRCmnmLWk28t6cazvL4ij8SqbkRg0xD0MhYZ2mlTYBJMkq4gpn22xYt-HDjtC4Nzl63dyMtMm3gxjbA9OJMhoauufYQS"/>
+</div>
+<div class="flex-grow flex flex-col space-y-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Jewelry Website</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed flex-grow">
+            I created a dynamic Jewelry Website using React for the frontend and Node.js for the backend.
+          </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">Prototypes</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">React</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">Nodejs</span>
+</div>
+</div>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-base font-medium text-gray-900 dark:text-white">View Project</span>
+<div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">add</span>
+</div>
+</a>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm p-6 flex flex-col space-y-6">
+<div class="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700">
+<img alt="Screenshot of a Restaurant website with a warm, dark theme showing delicious food and a welcoming interior." class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBypT65gwLSV56O1f9UesVnggW4vLBGgAIPQy418zS2tVS_YbFyXYMGTlXuyAXR2bkhOsiwxMkkjcOpYLF7rGm24e7QZtrMzpA5uGyfmsREp0xnBYeEGvYVr_xsnBsicK8EoF58folT1ynOzOouSJClDqYy7YyZl337D6Y70-TgWGk4zWcoWb7guZXW5JboLY1hNyvYsIyhg0cGIJS-MdJLCYlgVOKlhCGmd-LIpHa5KzrUU30CUViY6edgVq9N2tfHZb1j_Xh3nS97"/>
+</div>
+<div class="flex-grow flex flex-col space-y-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Restaurant Website</h2>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed flex-grow">
+            Crafted a responsive website for a local restaurant, emphasizing user-friendly navigation and enticing visuals to enhance the dining experience.
+          </p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">React</span>
+<span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-sm font-medium px-4 py-1.5 rounded-full">Nodejs</span>
+</div>
+</div>
+<a class="flex items-center justify-between group" href="#">
+<span class="text-base font-medium text-gray-900 dark:text-white">View Project</span>
+<div class="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-300">add</span>
+</div>
+</a>
+</div>
+</main>
+</div>
+
+</section>
+
+
+<section class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-200 antialiased">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<header class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+<p class="text-sm font-semibold uppercase tracking-widest text-primary mb-3">LATEST PORTFOLIO</p>
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 dark:text-white">
+        Transforming Ideas into <span class="text-primary">Exceptional</span>
+</h1>
+<p class="mt-6 text-base md:text-lg text-slate-600 dark:text-slate-400">
+        Business consulting consultants provide expert advice and guide businesses to help them improve their performance, efficiency, and organizational
+      </p>
+</header>
+<main>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+<div class="space-y-4 group">
+<div class="overflow-hidden rounded-lg">
+<img alt="Abstract arrangement of black cylindrical containers with a wisp of smoke." class="w-full h-auto object-cover aspect-video transition-transform duration-300 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLmA-ZgxSGXivvnKuNwJkij-DQYMn1ixEzH3_MFq55now8WGvGMalohPzOk1GLqL7pzhlmB_eIIHjRB8CDEwP91NC73pu87wjZIdk4hYsdt5AcyoQgMe_Rf8__nRMpnUhLkmdRANX6BZZjiLz4zpjLsrCN0AGIpk8Qc7Lah2XV3NH1iCj7s0jswfwU7oFsNdu3bWDx0Zd33nTuKqOGxM4Y__aOfpXYqG40t3BZnRF7doQo5bEN9cT5wrZxiNxa_oy2hbvdPQUKmwMS"/>
+</div>
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Digital Transformation Advisors</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Development Coaches</p>
+</div>
+<a class="flex-shrink-0 mt-1 w-9 h-9 flex items-center justify-center rounded-md bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors" href="#">
+<span class="material-icons text-xl transform group-hover:rotate-45 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="relative overflow-hidden rounded-lg p-1 bg-gradient-to-br from-primary/50 to-transparent">
+<div class="bg-background-dark rounded-[11px] overflow-hidden">
+<img alt="A makeup brush with black powder creating small mounds around it." class="w-full h-auto object-cover aspect-video transition-transform duration-300 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtDcdNWnWI4JCWhDhujIZH5_1Lm5B4nruKFya4QyjMjseyoWiMNEDwVYyYrGvZnb2SrdB6eptbjryw5jtnWHF1AmU2UL_a11NyaP3QqygiO9iQizHtbdHaeE7SuqW9Opa5Mcnj8twej_MgG8JZYgdOF8q_hBjwZ5ZVrtfzg79vkhLnjZCM4_SkVUQ9gQ_OxeZAvfL6TBtOVMLKu1z1cCu65brDeru1XFJGVIUgQrPLMl1iZPYwBvQZNFwoAQAXrinb5L4AZuT9fyFR"/>
+</div>
+</div>
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">My work is driven by the belief that thoughtful.</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Development App</p>
+</div>
+<a class="flex-shrink-0 mt-1 w-9 h-9 flex items-center justify-center rounded-md bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors" href="#">
+<span class="material-icons text-xl transform group-hover:rotate-45 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="overflow-hidden rounded-lg">
+<img alt="A black makeup brush with a geometrically shaped tip, resting on dark powder." class="w-full h-auto object-cover aspect-video transition-transform duration-300 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdYlspuo0OTFisXJqTB2tqZsOUwgqSMyxXSC0ECM-kBHToq9tviq4_JuQkuZMlrKu3HxFpFOtNNAPmshUrQZVXdeqUd8jZMUYZFTWVCubb_-4iajdRZ9BcWe3ZhGJxGMpLgtUAwKVtWYhPGmU2ZRyup9WKM380M-LgeplgREzmrerSNx8wD9ud69tkB25NMWnqx1TKHZdtF5OeqQmJx6vm1ex9F7okkumkbf-w1meBrSRqlOIJDqu3f2-Il4UtzoCotfSoQbCUvqBj"/>
+</div>
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">In this portfolio, you'll find a curated selection</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Web Design</p>
+</div>
+<a class="flex-shrink-0 mt-1 w-9 h-9 flex items-center justify-center rounded-md bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors" href="#">
+<span class="material-icons text-xl transform group-hover:rotate-45 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+<div class="space-y-4 group">
+<div class="overflow-hidden rounded-lg">
+<img alt="A metallic drill bit standing upright against dark, geometric rock formations." class="w-full h-auto object-cover aspect-video transition-transform duration-300 ease-in-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDfG0LrohOn9c46WLDYK2xRKNtG-8VmBkBLPUDX8dyDEhqm3rWoZvoJIXJRKGUroq6dllOG-JE3H1HlVkPNxzJauStVOq_v36ITIFNaRImOKlS7qTLECC50-xR8kqywy2mYDhqlQpUvaXjb1rhUvUsr9cP32xDA_VaXB80P5f97huExAawr8jINsk38m-sxcPRrpdaXotoCVCUAPf7ZRRXBY8bp3lmbCW2vsLWGgGXKtTTaHFO9siv8nbROk1fhc7NKr7OyXlzhIFF"/>
+</div>
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">I've had the privilege of working with various</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">App Development</p>
+</div>
+<a class="flex-shrink-0 mt-1 w-9 h-9 flex items-center justify-center rounded-md bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 group-hover:bg-primary group-hover:text-white transition-colors" href="#">
+<span class="material-icons text-xl transform group-hover:rotate-45 transition-transform">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</section>
+
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="text-center mb-16">
+<p class="text-primary font-semibold text-sm uppercase tracking-wider">Education &amp; Experience</p>
+<h1 class="mt-2 text-4xl sm:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark tracking-tight">
+                Empowering Creativity
+            </h1>
+<h1 class="text-4xl sm:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark tracking-tight">
+                through
+            </h1>
+<p class="mt-6 max-w-2xl mx-auto text-lg text-text-secondary-light dark:text-text-secondary-dark">
+                Business consulting consultants provide expert advice and guide businesses to help them improve their performance, efficiency, and organizational
+            </p>
+</div>
+<div class="mb-20">
+<h2 class="text-3xl font-bold text-text-primary-light dark:text-text-primary-dark mb-8">Education</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-lg shadow-sm">
+<h3 class="font-bold text-lg text-text-primary-light dark:text-text-primary-dark">Trainer Marketing</h3>
+<p class="font-semibold text-primary mt-1">2005-2009</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                        A personal portfolio is a curated collection of an individual's professional work, showcasing their skills, experience &amp; personal portfolio.
+                    </p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-lg border-2 border-primary shadow-lg ring-4 ring-primary/20">
+<h3 class="font-bold text-lg text-text-primary-light dark:text-text-primary-dark">Assistant Director</h3>
+<p class="font-semibold text-primary mt-1">2010-2014</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                        Each project here showcases my commitment to excellence and adaptability, tailored to meet each client's unique needs.
+                    </p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-lg shadow-sm">
+<h3 class="font-bold text-lg text-text-primary-light dark:text-text-primary-dark">Design Assistant</h3>
+<p class="font-semibold text-primary mt-1">2014-2016</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                        I've had the privilege of working with various clients, from startups to established companies, helping bring their visions to life.
+                    </p>
+</div>
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-lg shadow-sm">
+<h3 class="font-bold text-lg text-text-primary-light dark:text-text-primary-dark">IT Director</h3>
+<p class="font-semibold text-primary mt-1">2017-2020</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                        An IT Director plays a crucial role in an organization by overseeing its technology strategy, infrastructure.
+                    </p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-3xl font-bold text-text-primary-light dark:text-text-primary-dark mb-8">Experiences</h2>
+<div class="space-y-12">
+<div>
+<p class="text-primary text-sm font-semibold uppercase">experience</p>
+<h3 class="mt-2 text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">Soft Tech (2 Years)</h3>
+<p class="mt-1 font-semibold text-text-primary-light dark:text-text-primary-dark">UI/UX Designer</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum desi dolore eu fugiat nulla pariatu Duis aute irure.
+                        </p>
+</div>
+<div>
+<p class="text-primary text-sm font-semibold uppercase">experience</p>
+<h3 class="mt-2 text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">ModernTech (3 Years)</h3>
+<p class="mt-1 font-semibold text-text-primary-light dark:text-text-primary-dark">App Developer</p>
+<p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">
+                            In this portfolio, you'll find a curated selection of projects that highlight my skills in [Main Areas], e.g.
+                        </p>
+</div>
+</div>
+</div>
+<div class="flex justify-center">
+<div class="bg-surface-light dark:bg-surface-dark p-3 rounded-2xl shadow-lg">
+<img alt="A professional man with glasses working on a laptop in a modern office." class="rounded-lg object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvTwLKd-HpVwkAgMGOCjzZcvliAfiyQvyDRNq40nR9FjQRaTwLKhQok6GHqJ3jBR6sVmlARIUncM_BggiGSoJjrKMah4E5DGpj4OdhzgTGQ7lYpSPOhogC627Fp3QcvH073v3Y96xcT03mp9OA61K7IeJgU_jpdDQAWecm7_kOnBwlvVRh-nn6qZjKjW1Xo-UTq2UQnczRBEUvFIHNRK2ftXZYSWHlCFJnvHcF69xNHvcZBrUa13PRoVYEOiB4FRKD38gapCWc454w"/>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+
+<section class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8 font-display">
+<div class="w-full max-w-6xl mx-auto">
+<div class="relative rounded-2xl p-8 sm:p-12 glass-effect border border-primary/20">
+<div class="absolute inset-0 rounded-2xl border-2 border-primary opacity-30 pointer-events-none" style="box-shadow: 0 0 30px 5px var(--tw-shadow-color);"></div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+<div class="flex flex-col justify-center text-center lg:text-left">
+<span class="text-sm font-semibold tracking-widest uppercase text-primary mb-4">GET IN TOUCH</span>
+<h1 class="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+            Elevate your brand with Me
+          </h1>
+<p class="text-slate-600 dark:text-slate-400 max-w-md mx-auto lg:mx-0">
+            Have a project in mind, a question, or just want to say hello? Feel free to reach out! I'm always open to discussing.
+          </p>
+</div>
+<div>
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="sr-only" for="name">Your Name</label>
+<input class="w-full bg-slate-200/50 dark:bg-slate-800/50 border-slate-300 dark:border-slate-700 rounded-lg py-3 px-4 text-slate-900 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="name" name="name" placeholder="Your Name" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="phone">Phone Number</label>
+<input class="w-full bg-slate-200/50 dark:bg-slate-800/50 border-slate-300 dark:border-slate-700 rounded-lg py-3 px-4 text-slate-900 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="phone" name="phone" placeholder="Phone Number" type="tel"/>
+</div>
+<div>
+<label class="sr-only" for="email">Your Email</label>
+<input class="w-full bg-slate-200/50 dark:bg-slate-800/50 border-slate-300 dark:border-slate-700 rounded-lg py-3 px-4 text-slate-900 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="email" name="email" placeholder="Your Email" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="subject">Subject</label>
+<input class="w-full bg-slate-200/50 dark:bg-slate-800/50 border-slate-300 dark:border-slate-700 rounded-lg py-3 px-4 text-slate-900 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="subject" name="subject" placeholder="Subject" type="text"/>
+</div>
+</div>
+<div>
+<label class="sr-only" for="message">Your Message</label>
+<textarea class="w-full bg-slate-200/50 dark:bg-slate-800/50 border-slate-300 dark:border-slate-700 rounded-lg py-3 px-4 text-slate-900 dark:text-slate-200 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300" id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+</div>
+<div>
+<button class="w-full bg-slate-800/90 dark:bg-slate-100/10 border border-slate-700 dark:border-slate-100/20 text-slate-100 dark:text-white rounded-full py-4 px-6 flex items-center justify-center gap-2 hover:bg-slate-700 dark:hover:bg-slate-100/20 hover:border-primary/50 dark:hover:border-primary/50 transition-all duration-300 group" type="submit">
+<span>Appointment Now</span>
+<span class="material-symbols-outlined transform transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+
+
+
+<section class="bg-background-light dark:bg-background-dark font-display flex flex-col items-center justify-end min-h-screen p-4">
+<div class="fixed bottom-4 left-4 flex flex-col space-y-3 z-20">
+<button class="bg-primary hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="sr-only">Chat</span>
+</button>
+<button class="bg-primary hover:bg-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110">
+<span class="material-symbols-outlined">arrow_upward</span>
+<span class="sr-only">Scroll to top</span>
+</button>
+</div>
+<footer class="w-full max-w-7xl">
+<div class="glow-border bg-background-light dark:bg-background-dark/80 backdrop-blur-sm rounded-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(37,99,235,0.1)_0%,transparent_50%)] dark:bg-[radial-gradient(ellipse_at_top_right,_rgba(37,99,235,0.2)_0%,transparent_50%)]"></div>
+<div class="relative z-10 p-12">
+<div class="flex flex-col items-center justify-center text-center">
+<div class="flex items-center space-x-2 mb-4">
+<svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+<path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4z"></path>
+</svg>
+<span class="text-2xl font-bold text-slate-800 dark:text-white">VirTuo</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">© 2025 . All rights reserved by rowDevs.</p>
+</div>
+</div>
+</div>
+</footer>
+
+</section>
+
+
+
+
+</body></html>
