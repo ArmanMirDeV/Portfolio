@@ -5,6 +5,13 @@ import { GoProjectSymlink } from 'react-icons/go';
 
 const projects = [
   {
+    title: "CityWatch - Public Infrastructure Issue Reporting System",
+    desc: "A digital platform enabling citizens to report real-world public issues like broken streetlights, potholes, water leakage, garbage overflow, damaged footpaths, and more.",
+    tags: ["React", "Nodejs", "MongoDB"],
+    img: "https://i.ibb.co.com/jvfZHkv6/Screenshot-2026-01-01-083236.png",
+    link: "https://city-watch-mir.netlify.app/",
+  },
+  {
     title: "KajWala: Local Service Provider Website",
     desc: "Kajwala is a full-stack service marketplace platform where users can browse, book, and manage various handyman and home services. Service providers can track their bookings, revenue, and ratings. The platform is fully responsive with smooth animations and interactive analytics dashboards.",
     tags: ["React", "Nodejs", "MongoDB"],

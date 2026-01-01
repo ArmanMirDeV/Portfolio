@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="flex flex-wrap gap-4">
             <Button variant="primary" className="group text-black">
               <FaGithub className=" mr-2" />{" "}
-              <a href="https://github.com/">View GitHub</a>
+              <a href="https://github.com/ArmanMirDeV">View GitHub</a>
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="outline">
