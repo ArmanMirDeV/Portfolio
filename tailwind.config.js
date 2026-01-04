@@ -26,6 +26,8 @@ export default {
         'blob': 'blob 7s infinite',
         'fade-in': 'fadeIn 0.5s ease-out',
         'slide-up': 'slideUp 0.5s ease-out',
+        'spin-slow': 'spin 8s linear infinite',
+        'scan': 'scan 3s linear infinite',
       },
       keyframes: {
         blob: {
@@ -41,6 +43,10 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scan: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(400px)' },
         }
       }
     },

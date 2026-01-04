@@ -10,11 +10,13 @@ import EducationExperience from './sections/EducationExperience';
 import Contact from './sections/Contact';
 import FloatingIcons from "./components/FloatingIcons";
 import ErrorBoundary from './components/ErrorBoundary';
+import ModernCursor from './components/ModernCursor';
 
 function App() {
   return (
     <ErrorBoundary>
       <div className="bg-background-dark min-h-screen text-white font-sans selection:bg-cyan-500/30">
+        <ModernCursor />
         <Sidebar />
         <main className="lg:ml-64 relative z-0 overflow-hidden">
           {/* Background decoration */}

@@ -6,9 +6,9 @@ const Footer = () => {
                     <svg className="w-8 h-8 text-primary group-hover:rotate-180 transition-transform duration-700" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4z"></path>
                     </svg>
-                    <span className="text-2xl font-bold text-white tracking-widest uppercase">Arman Mir</span>
+                    <span className="text-2xl font-bold text-white tracking-widest uppercase">Al Saidul Arman Mir</span>
                 </div>
-                <p className="text-sm text-slate-500">© 2025 . All rights reserved by Arman.</p>
+                <p className="text-sm text-slate-500">© 2026 . All rights reserved by Arman Mir.</p>
             </div>
         </footer>
     );
