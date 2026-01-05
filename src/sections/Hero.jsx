@@ -60,25 +60,25 @@ const Hero = () => {
             high-performance web applications with modern technologies.
           </p>
 
-          <div className="flex flex-wrap gap-3 sm:gap-4">
-            <Button variant="primary" className="group text-black">
-              <FaGithub className=" mr-2" />{" "}
+          <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4">
+            <Button variant="primary" className="group text-black text-sm sm:text-base">
+              <FaGithub className="mr-2" />{" "}
               <a href="https://github.com/ArmanMirDeV" target="_blank" rel="noopener noreferrer">GitHub</a>
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" className="text-sm sm:text-base">
               <FaLinkedin className="mr-2 w-4 h-4 text-blue-500" />
               <a href="https://linkedin.com/in/armanmirdev" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" className="text-sm sm:text-base">
               <FaEnvelope className="mr-2 w-4 h-4 text-red-400" />
               <a href="mailto:mirarman8583@gmail.com">
                 Email
               </a>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" className="text-sm sm:text-base">
               <FileText className="mr-2 w-4 h-4" />
               <a href="https://docs.google.com/document/d/18KcS1P4RPgHqot8UU4R9kP1nRygp9CFPFlCuIh5umBU/edit?tab=t.0" target="_blank" rel="noopener noreferrer">
                 Resume

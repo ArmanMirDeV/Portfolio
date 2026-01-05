@@ -25,9 +25,9 @@ const QuickContact = () => {
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 50, scale: 0.9 }}
-          className="fixed bottom-6 right-6 z-50 max-w-sm"
+          className="fixed bottom-4 left-4 right-4 sm:bottom-6 sm:left-auto sm:right-6 z-50 max-w-sm sm:max-w-md mx-auto sm:mx-0"
         >
-          <div className="glass-panel p-4 rounded-2xl border border-primary/30 shadow-2xl">
+          <div className="glass-panel p-4 sm:p-5 rounded-2xl border border-primary/30 shadow-2xl">
             <button
               onClick={handleClose}
               className="absolute top-2 right-2 w-6 h-6 flex items-center justify-center rounded-full bg-slate-700/50 hover:bg-slate-600 transition-colors"
@@ -35,18 +35,18 @@ const QuickContact = () => {
               <X className="w-4 h-4 text-slate-300" />
             </button>
 
-            <div className="pr-6">
+            <div className="pr-6 sm:pr-8">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
-                  <span className="text-white text-lg">👋</span>
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-base sm:text-lg">👋</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white text-sm">Looking for a developer?</h4>
-                  <p className="text-xs text-slate-400">I'm available for new projects!</p>
+                  <h4 className="font-bold text-white text-xs sm:text-sm">Looking for a developer?</h4>
+                  <p className="text-[10px] sm:text-xs text-slate-400">I'm available for new projects!</p>
                 </div>
               </div>
 
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <motion.a
                   href="#contact"
                   onClick={handleClose}

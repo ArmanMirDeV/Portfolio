@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Sparkles } from 'lucide-react';
 
 const services = [
   {
@@ -52,9 +53,38 @@ const item = {
 
 const Services = () => {
     return (
-        <section id="services" className="py-20 bg-background-dark dark:bg-slate-900/50 relative">
+        <section id="services" className="py-20 bg-background-dark dark:bg-slate-900/50 relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
             <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+                {/* Section Header */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="text-center mb-16"
+                >
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        whileInView={{ scale: 1 }}
+                        viewport={{ once: true }}
+                        className="inline-block mb-4"
+                    >
+                        <div className="px-6 py-2 rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 backdrop-blur-sm">
+                            <span className="text-primary font-semibold tracking-wide text-sm flex items-center gap-2">
+                                <Sparkles className="w-4 h-4 animate-pulse" />
+                                My Expertise
+                            </span>
+                        </div>
+                    </motion.div>
+                    <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">
+                        Services I <span className="text-gradient">Provide</span>
+                    </h2>
+                    <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed font-outfit">
+                        Compelling digital solutions tailored to your needs, built with modern technologies and a focus on user experience.
+                    </p>
+                </motion.div>
+
                 <motion.div 
                     variants={container}
                     initial="hidden"

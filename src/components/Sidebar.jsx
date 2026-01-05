@@ -1,12 +1,13 @@
-import { FaHome, FaShapes, FaBriefcase, FaUser, FaUsers, FaTag, FaBlog, FaEnvelope, FaInstagram, FaLinkedin, FaTwitter, FaFacebook, FaBookOpen } from 'react-icons/fa';
+import { FaHome, FaShapes, FaBriefcase, FaUser, FaUsers, FaTag, FaBlog, FaEnvelope, FaInstagram, FaLinkedin, FaTwitter, FaFacebook, FaBookOpen, FaCode } from 'react-icons/fa';
 
 import logo from "../assets/armanmir.jpg"
 import SocialLinks from './SocialLinks';
 
 const navItems = [
   { icon: FaHome, label: 'Home', href: '#home' },
+  { icon: FaUser, label: 'About', href: '#about' },
   { icon: FaShapes, label: 'Services', href: '#services' },
-  { icon: FaUser, label: 'Skills', href: '#skills' },
+  { icon: FaCode, label: 'Skills', href: '#skills' },
   { icon: FaBriefcase, label: 'Projects', href: '#projects' },
   { icon: FaBookOpen, label: 'Experience', href: '#experience' }, // Changed Icon for experience
   { icon: FaEnvelope, label: 'Contact', href: '#contact' },
