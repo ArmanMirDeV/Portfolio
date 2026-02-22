@@ -7,7 +7,7 @@ const achievements = [
     id: 1,
     title: "Complete Web Development",
     issuer: "Programming Hero",
-    date: "Dec 2024",
+    date: "Dec 2025",
     description:
       "Successfully completed an intensive specialization in MERN-Stack Development with MongoDB, Express, React, and Node.js.",
     image: "https://i.ibb.co.com/TDJCs8XJ/Screenshot-2026-02-22-225539.png",
@@ -18,7 +18,7 @@ const achievements = [
     id: 2,
     title: "BlackBelt",
     issuer: "Programming Hero",
-    date: "Aug 2024",
+    date: "Feb 2026",
     description:
       "In recognition of outstanding performance of the complete web development.",
     image: "https://i.ibb.co.com/3Yjyx7zF/1771583020892.jpg",
