@@ -9,9 +9,9 @@ import Projects from './sections/Projects';
 import Portfolio from './sections/Portfolio';
 import EducationExperience from './sections/EducationExperience';
 import Contact from './sections/Contact';
+import Achievements from './sections/Achievements';
 import FloatingIcons from "./components/FloatingIcons";
 import ErrorBoundary from './components/ErrorBoundary';
-import ModernCursor from './components/ModernCursor';
 import MobileNav from './components/MobileNav';
 import Loader from './components/Loader';
 import { AnimatePresence } from 'framer-motion';
@@ -34,7 +34,6 @@ function App() {
           <Loader key="loader" />
         ) : (
           <div className="bg-background-dark min-h-screen text-white font-sans selection:bg-cyan-500/30">
-            <ModernCursor />
             <Sidebar />
             <MobileNav />
             <main className="lg:ml-64 relative z-0 overflow-hidden">
@@ -51,6 +50,7 @@ function App() {
                <Skills />
                <Projects />
                {/* <Portfolio />c */}
+               <Achievements />
                <EducationExperience />
                <Contact />
               <FloatingIcons />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaHome, FaShapes, FaBriefcase, FaUser, FaEnvelope, FaBookOpen, FaTimes, FaBars, FaCode } from 'react-icons/fa';
+import { FaHome, FaShapes, FaBriefcase, FaUser, FaEnvelope, FaBookOpen, FaTimes, FaBars, FaCode, FaAward } from 'react-icons/fa';
 import logo from "../assets/armanmir.jpg";
 
 const navItems = [
@@ -9,7 +9,8 @@ const navItems = [
   { icon: FaShapes, label: 'Services', href: '#services' },
   { icon: FaCode, label: 'Skills', href: '#skills' },
   { icon: FaBriefcase, label: 'Projects', href: '#projects' },
-  { icon: FaBookOpen, label: 'Experience', href: '#experience' },
+  { icon: FaAward, label: 'Achievements', href: '#achievements' },
+  { icon: FaBookOpen, label: 'Education', href: '#experience' },
   { icon: FaEnvelope, label: 'Contact', href: '#contact' },
 ];
 

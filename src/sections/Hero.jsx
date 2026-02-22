@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
 import { User, FileText, ArrowRight } from 'lucide-react';
 import img from "../assets/armanmir.jpg"
+import img2 from "../assets/img2.jpg"
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { useTypewriter } from '../hooks/useTypewriter';
 import CodeSnippet from '../components/CodeSnippet';
@@ -21,7 +22,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-20 overflow-hidden"
+      className="min-h-screen  flex items-center justify-center relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-20 overflow-hidden"
     >
       {/* Top Status Bar */}
       <HeroStatusBar />
@@ -110,7 +111,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative h-[500px] sm:h-[550px] lg:h-[600px] flex items-center justify-center"
+          className="relative h-[500px] sm:h-[550px] lg:h-[600px] flex items-center justify-center lg:-mt-96"
         >
           <div className="relative w-full h-full max-w-[500px] aspect-square">
             {/* Decorative Circles */}
@@ -147,8 +148,8 @@ const Hero = () => {
                   <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-lg overflow-hidden border-4 border-white/10 group/img">
                     <div className="absolute inset-0 bg-black/20 group-hover/img:bg-transparent transition-colors duration-300"></div>
                     <img
-                      className="w-full h-full object-cover transform group-hover/img:scale-110 transition-transform duration-500"
-                      src={img}
+                      className="w-full h-full object-cover  transform group-hover/img:scale-110 transition-transform duration-500"
+                      src={img2}
                       alt="Arman Mir"
                     />
                   </div>
