@@ -28,8 +28,14 @@ const education = [
 ];
 
 const experiences = [
-  { company: "", year: "Null", role: "Null", desc: "Hire Me" },
-  { company: "", year: "", role: "", desc: "Fresher" },
+  { 
+    company: "Rise Together", 
+    year: "March 2026 - Present", 
+    role: "Mernstack Developer (Frontend)", 
+    link: "https://www.risetogetherbd.com/",
+    desc: "Specializing in frontend development using Next.js and TypeScript. Building industry-standard projects while implementing clean code architecture and modern development workflows under senior mentorship." 
+  },
+  { company: "Open Source", year: "2025", role: "Contributor", desc: "Actively exploring and contributing to various open-source projects to refine development skills and learn from the community." },
 ];
 
 const EducationExperience = () => {
@@ -84,7 +90,16 @@ const EducationExperience = () => {
                                 >
                                     <div className="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_#00f2ff]"></div>
                                     <p className="text-primary text-xs sm:text-sm font-semibold uppercase tracking-wider mb-1">experience</p>
-                                    <h3 className="text-xl sm:text-2xl font-bold text-white">{exp.company} <span className="text-xs sm:text-sm font-normal text-slate-500">({exp.year})</span></h3>
+                                    <h3 className="text-xl sm:text-2xl font-bold text-white">
+                                        {exp.link ? (
+                                            <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline-offset-4 hover:underline decoration-primary/30">
+                                                {exp.company}
+                                            </a>
+                                        ) : (
+                                            exp.company
+                                        )}
+                                        <span className="text-xs sm:text-sm font-normal text-slate-500 ml-2">({exp.year})</span>
+                                    </h3>
                                     <p className="font-semibold text-white/80 mt-1 text-sm sm:text-base">{exp.role}</p>
                                     <p className="mt-3 sm:mt-4 text-slate-400 leading-relaxed text-sm sm:text-base">{exp.desc}</p>
                                 </motion.div>

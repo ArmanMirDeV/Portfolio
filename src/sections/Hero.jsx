@@ -17,7 +17,7 @@ import QuickContact from '../components/QuickContact';
 import HeroStatusBar from '../components/HeroStatusBar';
 
 const Hero = () => {
-  const roles = ["MERN Stack Developer", "Frontend Specialist", "React Developer", "UI/UX Enthusiast"];
+  const roles = ["MERN Stack Developer", "Frontend Specialist (Next.js)", "TypeScript Developer", "React Developer"];
   const displayRole = useTypewriter(roles);
   return (
     <section

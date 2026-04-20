@@ -22,8 +22,8 @@ const skills = [
   },
   {
     icon: FaCode,
-    title: "JavaScript (ES6+)",
-    text: "Strong expertise in vanilla JavaScript, ES6+ features, DOM manipulation, and asynchronous programming",
+    title: "JavaScript & TypeScript",
+    text: "Expert in building robust applications with TypeScript and ES6+, focusing on type safety, asynchronous programming, and modular architecture",
     category: "Frontend"
   },
   {

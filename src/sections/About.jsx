@@ -59,6 +59,13 @@ const About = () => {
     description: "Developed production-ready web applications using Next.js with routing, optimization, and best practices.",
     icon: Target,
     color: "from-green-500 to-emerald-500"
+  },
+  {
+    year: "2026",
+    title: "Mernstack Developer (Frontend)",
+    description: "Started professional role at Rise Together, specializing in high-performance frontend applications using Next.js and TypeScript with clean code architecture.",
+    icon: Code2,
+    color: "from-blue-600 to-indigo-600"
   }
 ];
 
